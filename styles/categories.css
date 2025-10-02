@@ -1,0 +1,27 @@
+.categories{
+    margin: 56px 0 80px;
+}
+.categories-item{
+    width: 100%;
+    height: 200px;
+    border-radius: 24px;
+    background: linear-gradient(193.82deg, rgba(241.281005859375, 241.281005859375, 242.25, 1),rgba(230.13307189941406, 230.13307189941406, 243.3125, 1) 100%);
+    overflow: hidden;
+}
+.categories-item h4{
+    margin-top: 16px;
+    margin: 16px 24px 0 24px;
+}
+.categories-item__img img{
+    max-width: 197px;
+    margin-left: auto;
+    display: block;
+}
+.categories-swiper .swiper-button-prev{
+    left: 16px;
+    top: 52%;
+}
+.categories-swiper .swiper-button-next{
+    right: 16px;
+    top: 52%;
+}

@@ -1,0 +1,204 @@
+.sliders {
+    display: flex;
+    gap: 32px;
+    padding: 24px 0;
+}
+.main-slider {
+    width: calc(100% - 336px);
+}
+.swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+    
+}
+.main-slider__content {
+    width: 100%;
+    height: 100%;
+    min-height: 368px;
+    padding: 60px 120px;
+    border-radius: 24px;
+    background: linear-gradient(182.46deg, rgba(241.281005859375, 241.281005859375, 242.25, 1),rgba(230.13307189941406, 230.13307189941406, 243.3125, 1) 100%);
+    position: relative;
+    overflow: hidden;
+}
+.main-slider__text{
+    max-width: 454px;
+}
+.main-slider__text p{
+    margin-bottom: 40px;
+}
+.main-slider__img{
+    position: absolute;
+    width: 612px;
+    height: 408px;
+    top: -30px;
+    right: -68px;
+}
+.main-slider__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.swiper-button-next,
+.swiper-button-prev {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 24px 0px rgba(117, 138, 132, 0.15);
+    overflow: hidden;
+}
+.main-slider .swiper-button-prev{
+    left: 16px;
+}
+.main-slider .swiper-button-next{
+    right: 16px;
+}
+.main-slider__pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 23px;
+}
+.main-slider__pagination .swiper-pagination-bullet{
+    width: 32px;
+    height: 2px;
+    background-color: #BAC0BE;
+    margin: 0 6px ;
+    border-radius: 0;
+    opacity: 1;
+    border-radius: 2px;
+}
+.main-slider__pagination .swiper-pagination-bullet-active{
+    background-color: rgb(31,31,31);
+}
+.day-product {
+    width: 304px;
+    height: 368px;
+    
+}
+.day-product__content {
+    width: 100%;
+    height: 368px;
+    box-sizing: border-box;
+    border: 1px solid rgba(249, 249, 249, 1);
+    border-radius: 12px;
+    padding: 24px;
+    position: relative;
+    background-color: #FFF;
+}
+.day-product__discount{
+    position: absolute;
+    top: 25px;
+    right: 22px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    text-align: center;
+    color: #FFF;
+    background: rgba(66, 66, 81, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.day-product__discount span{
+    font-size: 12px;
+    font-weight: 700;
+    display: block;
+    line-height: 22px;
+    text-transform: uppercase;
+    margin-top: -6px;
+}
+.day-product__text p{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-top: 4px;
+}
+.day-product__img{
+    width:  100%;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 17px;
+    margin-bottom: 22px;
+}
+.day-product__img img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+.day-product__buy {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding-right: 8px;
+}
+.day-product__prices {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+}
+.day-product__price-new {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    color: rgb(31,31,31);
+}
+.day-product__price-old {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    color: rgba(186, 192, 190, 1);
+    
+}
+.cart-btn {
+    flex-shrink: 0;
+    width: 48px;
+    height: 40px;
+    background-color: rgba(98, 98, 113, 1);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.day-product .swiper-button-prev{
+    left: 16px;
+}
+.day-product .swiper-button-next{
+    right: 16px;
+}
+.day-product__pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 23px;
+}
+.day-product__pagination .swiper-pagination-bullet{
+    width: 32px;
+    height: 2px;
+    background-color: #BAC0BE;
+    margin: 0 6px ;
+    border-radius: 0;
+    opacity: 1;
+    border-radius: 2px;
+}
+.day-product__pagination .swiper-pagination-bullet-active{
+    background-color: rgb(31,31,31);
+}
+.swiper-button-lock{
+    display: none;
+}
+.swiper-button-disabled{
+    display: none;
+}

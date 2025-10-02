@@ -1,0 +1,22 @@
+.directions{
+    margin-bottom: 80px;
+}
+.directions-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+.directions-list div{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 24px;
+    padding: 20px 24px 20px 24px;
+    border-radius: 18px;
+    background: var(--underlying_background, rgba(249, 249, 249, 1));   
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
