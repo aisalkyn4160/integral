@@ -1,0 +1,213 @@
+.product-card{
+    width: 252px;
+    min-width: 252px;
+    overflow: hidden;
+    border: 1px solid rgba(249, 249, 249, 1);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.product-card-slider {
+}
+.product-card-swiper {
+    width: 100%;
+    height: 250px;
+}
+.swiper-wrapper {
+}
+.product-card-slider .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.product-card-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 11px;
+}
+.product-card-pagination .swiper-pagination-bullet {
+    width: 4px;
+    height: 4px;
+    background-color: rgba(186, 192, 190, 1);
+    margin: 0 4px ;
+    border-radius: 50%;
+    opacity: 1;
+}
+.product-card-pagination .swiper-pagination-bullet-active{
+    background-color:  rgba(66, 66, 81, 1);
+}
+.product-card-content {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex-grow: 1;
+}
+.product-card-title{
+    margin-bottom: 0;
+}
+.product-card-title span{
+    display: block;
+}
+.product-card-status{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+}
+.new-status {
+    color: rgba(255, 255, 255, 1);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0%;
+    border-radius: 8px;
+    background: rgba(123, 97, 255, 1);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 4px 8px 4px 8px;
+    width: max-content;
+}
+.sale-status{
+    color: rgba(255, 255, 255, 1);
+    width: max-content;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0%;
+    text-align: left;
+    border-radius: 8px;
+    background: rgba(255, 74, 80, 1);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 4px 8px 4px 8px;
+}
+.discount-status{
+    padding: 4px 8px 4px 8px;
+    border-radius: 8px;
+    border: 1px solid rgba(98, 98, 113, 1);
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0%;
+    color: rgba(98, 98, 113, 1);
+}
+.day-status{
+    padding: 4px 8px 4px 8px;
+    border-radius: 8px;
+    background: rgba(255, 156, 88, 1);
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0%;
+    color: rgba(255, 255, 255, 1);
+}
+.rating{
+    color: rgba(186, 192, 190, 1);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 5px;
+    letter-spacing: 0%;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+.rating div{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: rgba(255, 74, 80, 1);
+}
+.price {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0%;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.price span{
+    color: rgba(186, 192, 190, 1);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-decoration-line: line-through;
+}
+.product-card-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto;
+}
+.product-card-btn{
+    position: relative;
+    margin-right: 8px;
+    height: 44px;
+}
+.product-card-btn .btn {
+    padding: 12px 44px;
+}
+.product-card-count{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 155px;
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    border: 1px solid  rgba(221, 221, 221, 1);
+    border-radius: 12px;
+    padding: 12px;
+}
+.product-card-count input{
+    width: calc(100% - 30px);
+    max-width: 100%;
+    text-align: center;
+    border: none;
+    color: rgba(31, 31, 31, 1);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0%;
+}
+.compare-btn {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.like-btn {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.like-btn.active svg path{
+    /* stroke: rgba(255, 74, 80, 1); */
+    /* fill: rgba(255, 74, 80, 1); */
+}
+
+.new-products{
+    margin-bottom: 78px;
+
+}
+.new-products-swiper .swiper-slide{
+    width: 250px;
+    height: auto;
+}

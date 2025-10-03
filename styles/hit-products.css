@@ -1,0 +1,19 @@
+.hit-products{
+    margin-bottom: 79px;
+}
+.hit-products-swiper .swiper-slide{
+    width: 250px;
+    height: auto;
+}
+.hit-status{
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 18px;
+    letter-spacing: 0%;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+    display: block;
+    background: rgba(57, 179, 0, 1);
+    border-radius: 8px;
+    padding: 4px 8px 4px 8px;
+}

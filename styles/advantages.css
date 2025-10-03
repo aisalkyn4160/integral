@@ -1,0 +1,16 @@
+.advantages {
+    margin-bottom: 78px;
+}
+.advantages-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+.advantages-item {
+    border-radius: 24px;
+    background:  rgba(249, 249, 249, 1);
+    padding: 26px 24px 26px 24px;
+}
+.advantages-item h4{
+    margin-bottom: 12px;
+}
