@@ -10,7 +10,7 @@
 @import url('advantages.css');
 @import url('news.css');
 @import url('footer.css');
-
+@import url('catalog-menu.css');
 /* -------------------------------------------fonts------------------------------------------- */
 
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
@@ -154,5 +154,7 @@ p{
 	color: rgba(255, 255, 255, 1) !important;
 	cursor: pointer;
 	transition: all 0.3s ease;
-
+}
+.btn:hover{
+	background: rgba(73, 73, 73, 1);
 }

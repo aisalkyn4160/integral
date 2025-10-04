@@ -34,6 +34,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.3s ease;
+}
+.footer .vk:hover{
+    background: rgba(66, 66, 81, 1);
 }
 .footer .whatsapp {
      width: 40px;
@@ -43,6 +47,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.3s ease;
+}
+.footer .whatsapp:hover{
+    background: rgba(186, 192, 190, 1);
 }
 .footer .telegram {
      width: 40px;
@@ -52,6 +60,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.3s ease;
+}
+.footer .telegram:hover{
+    background: rgba(186, 192, 190, 1);
 }
 .footer-middle {
     padding: 52px 0 68px;
@@ -112,9 +124,8 @@
     width: 12px;
     height: 12px;
     background: rgba(255, 255, 255, 1);
-    border: 2px solid rgba(221, 221, 221, 1);
     border-radius: 3px;
-    border: 2px solid rgba(73, 73, 73, 1);
+    border: 1px solid rgba(73, 73, 73, 1);
     position: relative;
 }
 .subscribe-checkbox input::after{
