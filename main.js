@@ -30,22 +30,38 @@ window.addEventListener('scroll', function() {
 });
 
 
+// Обработка каталогов
 document.addEventListener('DOMContentLoaded', () => {
-   const showCatalog = document.querySelector('#show-catalog');
-   const catalogMenu = document.querySelector('.catalog-menu');
+    const showCatalog = document.querySelector('#show-catalog');
+    const showBussinesCatalog = document.querySelector('#show-bussines-catalog');
+    const catalogMenu = document.querySelector('.catalog-menu:not(.bussines-catalog-menu)');
+    const bussinesCatalogMenu = document.querySelector('.bussines-catalog-menu');
 
-   showCatalog?.addEventListener('click', () => {
-       catalogMenu?.classList.toggle('active');
-       showCatalog?.classList.toggle('active');
-   });
-});
+    // Функция для закрытия противоположного каталога
+    const closeOppositeCatalog = (currentMenu, oppositeMenu, oppositeBtn) => {
+        if (oppositeMenu?.classList.contains('active')) {
+            oppositeMenu.classList.remove('active');
+        }
+        if (oppositeBtn?.classList.contains('active')) {
+            oppositeBtn.classList.remove('active');
+        }
+    };
 
-document.addEventListener('DOMContentLoaded', () => {
-   const showBussinesCatalog = document.querySelector('#show-bussines-catalog');
-   const bussinesCatalogMenu = document.querySelector('.bussines-catalog-menu');
+    // Обработчик для обычного каталога
+    showCatalog?.addEventListener('click', () => {
+        catalogMenu?.classList.toggle('active');
+        showCatalog?.classList.toggle('active');
+        
+        // Закрываем бизнес-каталог если он открыт
+        closeOppositeCatalog(catalogMenu, bussinesCatalogMenu, showBussinesCatalog);
+    });
 
-   showBussinesCatalog?.addEventListener('click', () => {
-       bussinesCatalogMenu?.classList.toggle('active');
-       showBussinesCatalog?.classList.toggle('active');
-   });
+    // Обработчик для бизнес-каталога
+    showBussinesCatalog?.addEventListener('click', () => {
+        bussinesCatalogMenu?.classList.toggle('active');
+        showBussinesCatalog?.classList.toggle('active');
+        
+        // Закрываем обычный каталог если он открыт
+        closeOppositeCatalog(bussinesCatalogMenu, catalogMenu, showCatalog);
+    });
 });

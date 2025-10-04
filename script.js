@@ -63,3 +63,38 @@ const newsSwiper = new Swiper('.news-swiper', {
     spaceBetween: 16,
 })
 
+// Инициализация пагинации для карточек с изображениями
+document.addEventListener('DOMContentLoaded', function() {
+    // Находим все карточки товаров
+    const productCards = document.querySelectorAll('.product-card');
+    
+    productCards.forEach((card, index) => {
+        // Ищем слайдер с изображениями внутри карточки
+        const swiperEl = card.querySelector('.swiper');
+        const paginationEl = card.querySelector('.product-card-pagination');
+        
+        if (swiperEl && paginationEl) {
+            // Даем уникальный ID пагинации для каждой карточки
+            paginationEl.id = `pagination-${index}`;
+            
+            // Инициализируем слайдер с пагинацией
+            new Swiper(swiperEl, {
+                loop: true,
+                pagination: {
+                    el: `#pagination-${index}`,
+                    clickable: true,
+                },
+                // Предотвращаем всплытие событий
+                touchStartPreventDefault: false,
+                touchMoveStopPropagation: true,
+                // Отключаем автопрокрутку
+                autoplay: false,
+                // Изолируем каждый слайдер
+                allowTouchMove: true,
+                preventInteractionOnTransition: false,
+            });
+        }
+    });
+});
+
+

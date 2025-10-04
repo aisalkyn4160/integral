@@ -1,7 +1,6 @@
 .catalog-menu {
   width: 100vw;
   background: rgba(255, 255, 255, 1);
-
   display: block;
   position: absolute;
   top: 115px;
@@ -26,7 +25,9 @@
   visibility: visible;
   pointer-events: all;
 }
-
+.header__bottom.sticky .catalog-menu{
+  top: 80px;
+}
 .catalog-menu__content {
   max-width: 1920px;
   margin: 0 auto;

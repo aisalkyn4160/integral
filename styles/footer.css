@@ -19,8 +19,7 @@
     font-weight: 500;
     line-height: 20px;
 }
-.logo {
-}
+
 .footer-socials{
     display: flex;
     align-items: center;
@@ -171,11 +170,4 @@
     align-items: center;
     gap: 45px;
 }
-.footer-policy {
-}
-.footer-offer {
-}
-.footer-map {
-}
-.copyright {
-}
+

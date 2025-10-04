@@ -13,8 +13,7 @@
 	align-items: center;
 	gap: 50px;
 }
-.header__nav {
-}
+
 .header__menu {
 	display: flex;
 	align-items: center;
@@ -64,6 +63,11 @@
 	align-items: center;
 	gap: 40px;
 	/* position: relative; */
+}
+
+/* Предотвращаем всплытие событий для вложенных слайдеров */
+.product-card .swiper {
+	touch-action: pan-y;
 }
 .header__bottom-middle {
 	display: flex;
@@ -266,7 +270,4 @@
 	font-size: 10px;
 	font-weight: 500;
 	line-height: 100%;
-}
-.new-products{
-	
 }
