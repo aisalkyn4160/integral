@@ -38,13 +38,13 @@
 	margin-left: 24px;
 }
 .header__btn{
-	margin-left: 9px;
-	margin-right: 18px;
+	margin-left: 8px;
+	margin-right: 20px;
 	font-size: 14px;
 	line-height: 20px;
 }
 .header__bottom {
-	padding: 15px 0;
+	padding: 18px 0;
 }
 .header__bottom-content {
 	display: flex;

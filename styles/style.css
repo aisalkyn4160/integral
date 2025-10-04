@@ -9,7 +9,7 @@
 @import url('about.css');
 @import url('advantages.css');
 @import url('news.css');
-@import url('footer-style.css');
+@import url('footer.css');
 
 /* -------------------------------------------fonts------------------------------------------- */
 
@@ -84,7 +84,6 @@ main{
 }
 
 footer{
-	background-color: black;
 	flex-shrink: 0;
 }
 
@@ -92,7 +91,6 @@ footer{
 	max-width: 1440px;
 	margin: 0 auto;
 	padding: 0 58px;
-	border: 1px solid red;
 }
 
 h1{

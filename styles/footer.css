@@ -1,0 +1,170 @@
+.footer{
+    background: #F2F2F2;
+}
+.footer-top {
+    padding: 37px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(221, 221, 221, 1);
+}
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+.footer-logo p{
+    max-width: 290px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+.logo {
+}
+.footer-socials{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.footer .vk {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background:  rgba(98, 98, 113, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer .whatsapp {
+     width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background:  rgba(98, 98, 113, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer .telegram {
+     width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background:  rgba(98, 98, 113, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-middle {
+    padding: 52px 0 68px;
+    display: flex;
+    justify-content: space-between;
+     border-bottom: 1px solid rgba(221, 221, 221, 1);
+}
+.footer-navs {
+    display: flex;
+    gap: 120px;
+}
+.footer-navs ul{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: rgba(98, 98, 113, 1);
+}
+.footer-subscribe {
+    max-width: 431px;
+}
+.subscribe-form {
+    margin-top: 20px;
+}
+.subscribe-input {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.subscribe-input input{
+    padding: 11px 16px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    flex-grow: 1;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(221, 221, 221, 1);
+}
+.subscribe-input input::placeholder{
+    color: rgba(186, 192, 190, 1);
+}
+.subscribe-input .btn{
+    padding: 12px 25px;
+}
+.subscribe-checkbox{
+    display: flex;
+    gap: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    margin-top: 9px;
+}
+.subscribe-checkbox input{
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    background: rgba(255, 255, 255, 1);
+    border: 2px solid rgba(221, 221, 221, 1);
+    border-radius: 3px;
+    border: 2px solid rgba(73, 73, 73, 1);
+    position: relative;
+}
+.subscribe-checkbox input::after{
+    content: "";
+    position: absolute;
+    left: 1px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 7px;
+    height: 7px;
+    background: no-repeat center/contain url(../assets/icons/check.svg);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+.subscribe-checkbox input:checked::after{   
+    opacity: 1;
+}
+.payment {
+    margin-top: 24px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+}
+.payment ul{
+    display: flex;
+    align-items: center;
+    gap: 16px
+}
+.payment img{
+    width: 36px;
+}
+.footer-bottom {
+    padding: 22px 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-links {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+.footer-policy {
+}
+.footer-offer {
+}
+.footer-map {
+}
+.copyright {
+}
