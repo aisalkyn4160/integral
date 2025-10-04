@@ -62,3 +62,4 @@ const newsSwiper = new Swiper('.news-swiper', {
     loop: true,
     spaceBetween: 16,
 })
+
