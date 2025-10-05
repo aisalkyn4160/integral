@@ -1,0 +1,8 @@
+<svg viewBox="0 0 26 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26.000000" height="20.000000" fill="none" customFrame="#000000">
+	<rect id="Component 53" width="26.000000" height="20.000000" x="0.000000" y="0.000000" />
+	<g id="Group 8">
+		<path id="Vector 1 (Stroke)" d="M0 2C0 1.44772 0.447715 1 1 1L25 1C25.5523 1 26 1.44772 26 2C26 2.55228 25.5523 3 25 3L1 3C0.447715 3 0 2.55228 0 2Z" fill="rgb(30.8125,30.8125,30.8125)" fill-rule="evenodd" />
+		<path id="Vector 2 (Stroke)" d="M0 10C0 9.44771 0.447715 9 1 9L21 9C21.5523 9 22 9.44771 22 10C22 10.5523 21.5523 11 21 11L1 11C0.447715 11 0 10.5523 0 10Z" fill="rgb(30.8125,30.8125,30.8125)" fill-rule="evenodd" />
+		<path id="Vector 3 (Stroke)" d="M0 18C0 17.4477 0.447715 17 1 17L17 17C17.5523 17 18 17.4477 18 18C18 18.5523 17.5523 19 17 19L1 19C0.447715 19 0 18.5523 0 18Z" fill="rgb(30.8125,30.8125,30.8125)" fill-rule="evenodd" />
+	</g>
+</svg>

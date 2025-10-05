@@ -1,0 +1,7 @@
+<svg viewBox="0 0 26 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26.000000" height="20.000000" fill="none" customFrame="#000000">
+	<rect id="Component 53" width="26.000000" height="20.000000" x="0.000000" y="0.000000" />
+	<g id="Group 7">
+		<path id="Vector 1 (Stroke)" d="M0 1C0 0.447715 0.447715 0 1 0L25 0C25.5523 0 26 0.447715 26 1C26 1.55228 25.5523 2 25 2L1 2C0.447715 2 0 1.55228 0 1Z" fill="rgb(30.8125,30.8125,30.8125)" fill-rule="evenodd" transform="matrix(0.707107,-0.707107,0.707107,0.707107,3.41406,18.3848)" />
+		<path id="Vector 3 (Stroke)" d="M0 1C0 0.447715 0.6467 0 1.44444 0L24.5556 0C25.3533 0 26 0.447715 26 1C26 1.55228 25.3533 2 24.5556 2L1.44444 2C0.6467 2 0 1.55228 0 1Z" fill="rgb(30.8125,30.8125,30.8125)" fill-rule="evenodd" transform="matrix(0.707107,0.707107,-0.707107,0.707107,4.41406,0.384766)" />
+	</g>
+</svg>

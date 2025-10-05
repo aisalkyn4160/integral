@@ -11,6 +11,7 @@
 @import url('news.css');
 @import url('footer.css');
 @import url('catalog-menu.css');
+@import url('burger-menu.css');
 /* -------------------------------------------fonts------------------------------------------- */
 
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
@@ -136,6 +137,7 @@ p{
 	font-weight: 500;
 	line-height: 24px;
 	letter-spacing: 0%;
+	color: rgba(31, 31, 31, 1);
 }
 .btn{
 	width: max-content;
@@ -157,4 +159,28 @@ p{
 }
 .btn:hover{
 	background: rgba(73, 73, 73, 1);
+}
+
+@media (max-width:1150px){
+	.container{
+		padding: 0 20px;
+	}
+}
+
+@media (max-width:767px){
+	.container{
+		padding: 0 12px;
+	}
+	h1{
+		font-size: 24px;
+		line-height: 32px;
+		margin-bottom: 12px;
+	}
+	p{
+		font-size: 14px;
+		line-height: 20px;
+	}
+	.main-slider__text{
+		min-width: 202px;
+	}
 }

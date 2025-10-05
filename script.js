@@ -22,6 +22,18 @@ const daySwiper = new Swiper('.day-product .swiper', {
         nextEl: '.day-product .swiper-button-next',
         prevEl: '.day-product .swiper-button-prev',
     },
+    breakpoints: {
+        0: {
+            slidesPerView: 'auto',
+            spaceBetween: 12,
+        },
+        768: {
+            slidesPerView: 'auto',
+        },
+        1050: {
+            slidesPerView: 1,
+        },
+    },
 })
 
 const categoriesSwiper = new Swiper('.categories-swiper', {
@@ -33,13 +45,17 @@ const categoriesSwiper = new Swiper('.categories-swiper', {
     },
 })
 
-const productCardSwiper = new Swiper('.product-card-swiper', {
-    loop: true,
-    pagination: {
-        el: '.product-card-pagination',
-        clickable: true,
-    },
-})
+document.querySelectorAll('.product-card-swiper').forEach(slider => {
+    const paginationContainer = slider.closest('.product-card-slider').querySelector('.product-card-pagination');
+    
+    new Swiper(slider, {
+        loop: true,
+        pagination: {
+            el: paginationContainer,
+            clickable: true,
+        },
+    });
+});
 
 const newSwiper = new Swiper('.new-products-swiper', {
     slidesPerView: 'auto',
