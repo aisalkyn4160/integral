@@ -63,38 +63,35 @@ const newsSwiper = new Swiper('.news-swiper', {
     spaceBetween: 16,
 })
 
-// Инициализация пагинации для карточек с изображениями
+
+// Добавление класса active к кнопке "В корзину"
 document.addEventListener('DOMContentLoaded', function() {
-    // Находим все карточки товаров
-    const productCards = document.querySelectorAll('.product-card');
+    // Обработка кнопки "В корзину"
+    document.querySelectorAll('.product-card-btn .btn').forEach(button => {
+        button.addEventListener('click', function() {
+            const productCardBtn = this.closest('.product-card-btn');
+            productCardBtn.classList.add('active');
+        });
+    });
     
-    productCards.forEach((card, index) => {
-        // Ищем слайдер с изображениями внутри карточки
-        const swiperEl = card.querySelector('.swiper');
-        const paginationEl = card.querySelector('.product-card-pagination');
-        
-        if (swiperEl && paginationEl) {
-            // Даем уникальный ID пагинации для каждой карточки
-            paginationEl.id = `pagination-${index}`;
+    // Обработка кнопок + и -
+    document.addEventListener('click', function(e) {
+        const countButton = e.target.closest('.product-card-count button');
+        if (countButton) {
+            const countBlock = e.target.closest('.product-card-count');
+            const input = countBlock.querySelector('input');
+            let value = parseInt(input.value);
             
-            // Инициализируем слайдер с пагинацией
-            new Swiper(swiperEl, {
-                loop: true,
-                pagination: {
-                    el: `#pagination-${index}`,
-                    clickable: true,
-                },
-                // Предотвращаем всплытие событий
-                touchStartPreventDefault: false,
-                touchMoveStopPropagation: true,
-                // Отключаем автопрокрутку
-                autoplay: false,
-                // Изолируем каждый слайдер
-                allowTouchMove: true,
-                preventInteractionOnTransition: false,
-            });
+            if (countButton.textContent === '+') {
+                input.value = value + 1;
+            } else if (countButton.textContent === '-' && value > 1) {
+                input.value = value - 1;
+            } else if (countButton.textContent === '-' && value === 1) {
+                // Если значение становится 1 и нажимаем "-" - возвращаем кнопку "В корзину"
+                const productCardBtn = countBlock.closest('.product-card-btn');
+                productCardBtn.classList.remove('active');
+                input.value = 1; // Сбрасываем значение
+            }
         }
     });
 });
-
-

@@ -31,7 +31,7 @@
 .catalog-menu__content {
   max-width: 1920px;
   margin: 0 auto;
-  max-height: 100vh;
+  max-height: 730px;
   overflow-y: auto;
   overflow-x: hidden;
   position: relative;

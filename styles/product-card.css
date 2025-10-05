@@ -9,14 +9,11 @@
     display: flex;
     flex-direction: column;
 }
-.product-card-slider {
-}
 .product-card-swiper {
     width: 100%;
     height: 250px;
 }
-.swiper-wrapper {
-}
+
 .product-card-slider .swiper-slide img {
     width: 100%;
     height: 100%;
@@ -152,6 +149,7 @@
     position: relative;
     margin-right: 8px;
     height: 44px;
+    width: 155px;
 }
 .product-card-btn .btn {
     padding: 12px 44px;
@@ -163,46 +161,72 @@
     z-index: -1;
     width: 155px;
     height: 44px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 4px;
     box-sizing: border-box;
     border: 1px solid  rgba(221, 221, 221, 1);
     border-radius: 12px;
-    padding: 12px;
+    padding:0;
+    background-color: #FFF;
+}
+.product-card-btn.active .product-card-count{
+    z-index: 1;
+}
+.product-card-btn.active .btn{
+    display: none;
 }
 .product-card-count input{
-    width: calc(100% - 30px);
+    /* width: calc(100% - 30px); */
+    width: 100%;
     max-width: 100%;
     text-align: center;
     border: none;
     color: rgba(31, 31, 31, 1);
     font-size: 16px;
     font-weight: 600;
-    line-height: 24px;
+    line-height: 16px;
     letter-spacing: 0%;
+    -moz-appearance: textfield;
+    -webkit-appearance: textfield;
+    appearance: textfield;
 }
-.compare-btn {
+.product-card-count input::-webkit-outer-spin-button,
+.product-card-count input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.product-card-count button{
+    font-size: 22px;
+}
+.compare-btn input{
+    appearance: none;
     width: 24px;
     height: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    background: no-repeat center/15px 14px url('../assets/icons/compare-ic-off.svg') ;
+    transition: background 0.3s ease;
 }
-.like-btn {
+.compare-btn input:checked{
+    background: no-repeat center/15px 14px url('../assets/icons/compare-ic-on.svg') ;
+}
+.like-btn input{
+    appearance: none;
     width: 24px;
     height: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    background: no-repeat center/16px 14px url('../assets/icons/like-ic-off.svg') ;
+    transition: background 0.3s ease;
 }
-.like-btn.active svg path{
-    /* stroke: rgba(255, 74, 80, 1); */
-    /* fill: rgba(255, 74, 80, 1); */
+.like-btn input:checked{
+    background: no-repeat center/16px 14px url('../assets/icons/like-ic-on.svg') ;
 }
-
 .new-products{
     margin-bottom: 78px;
 
