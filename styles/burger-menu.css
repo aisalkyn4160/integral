@@ -1,3 +1,35 @@
 .burger-menu{
     display: none;
+    padding: 24px 12px;
+}
+.burger-menu__tabs {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.burger-menu__tab {
+    width: 164px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    cursor: pointer;
+    padding: 8px 16px;
+    border: 1px solid  rgba(221, 221, 221, 1);
+    border-radius: 12px;
+    margin-bottom: 24px;
+}
+.burger-menu__tab.active{
+    background: rgba(249, 249, 249, 1);
+    border-color: rgba(249, 249, 249, 1);
+}
+.burger-menu__content {
+}
+.burger-menu__tabs-content {
+}
+.burger-menu__tabs-content ul > li{
+  
 }

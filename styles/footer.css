@@ -2,10 +2,11 @@
     background: #F2F2F2;
 }
 .footer-top {
-    padding: 37px 0;
+    padding: 39px 0 36px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 22px;
     border-bottom: 1px solid rgba(221, 221, 221, 1);
 }
 .footer-logo {
@@ -68,11 +69,16 @@
     padding: 52px 0 68px;
     display: flex;
     justify-content: space-between;
-     border-bottom: 1px solid rgba(221, 221, 221, 1);
+    flex-wrap: wrap;
+    gap: 50px;
+    border-bottom: 1px solid rgba(221, 221, 221, 1);
 }
 .footer-navs {
+    width: 55%;
+    min-width: 565px;
     display: flex;
-    gap: 120px;
+    justify-content: space-between;
+    gap: 50px;
 }
 .footer-navs ul{
     display: flex;
@@ -164,6 +170,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 24px;
+    color: rgba(73, 73, 73, 1);
 }
 .footer-links {
     display: flex;
@@ -171,3 +179,71 @@
     gap: 45px;
 }
 
+@media (max-width: 767px) {
+    .footer-top{
+        flex-direction: column;
+        align-items: center;
+        border-bottom: none;
+    }
+    .footer-logo{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-middle{
+        padding: 0;
+        gap: 32px;
+        border: none;
+    }
+    .footer-navs{
+        width: 100%;
+        min-width: 0;
+        flex-direction: column;
+        gap: 12px;
+    }
+    .footer-navs nav{
+         border-bottom: 1px solid rgba(221, 221, 221, 1);
+    }
+    .footer-navs h5{
+        position: relative;
+        cursor: pointer;
+        padding-right: 50px;
+    }
+    .footer-navs h5::after{
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 22px;
+        height: 22px;
+        background: no-repeat center/contain url(../assets/icons/accordion-arrow.svg);
+        transition: all 0.3s ease;
+    }
+    .footer-navs h5.active::after{
+        transform: translateY(-50%) rotate(180deg);
+    }   
+    .footer-navs ul{
+        display: none;
+        padding-bottom: 12px;
+    }
+    .subscribe-input .btn{
+        padding: 12px;
+    }
+    .subscribe-input  input{
+        width: 100%;
+    }
+    .payment{
+        margin-top: 32px;
+    }
+    .footer-bottom{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 33px 0 40px;
+    }
+    .footer-links{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+}

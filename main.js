@@ -65,3 +65,24 @@ document.addEventListener('DOMContentLoaded', () => {
         closeOppositeCatalog(bussinesCatalogMenu, catalogMenu, showCatalog);
     });
 });
+
+// header-burger
+document.addEventListener('DOMContentLoaded', () => {
+    const headerBurger = document.querySelector('.header__burger');
+    const mobMenu = document.querySelector('.burger-menu');
+
+    headerBurger.addEventListener('click', () => {
+        headerBurger.classList.toggle('active');
+        mobMenu.classList.toggle('active');
+        document.body.classList.toggle('no-scroll');
+    });
+    
+});
+
+// footer
+$(function () {
+    $('.footer-navs h5').click(function () {
+        $(this).toggleClass('active')
+        $(this).siblings('ul').slideToggle();
+    })
+})

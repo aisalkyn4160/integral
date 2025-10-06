@@ -55,7 +55,7 @@
 	left: 0;
 	width: 100%;
 	z-index: 1000;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	/* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
 }
 .header__bottom-content {
 	display: flex;
@@ -65,10 +65,6 @@
 	/* position: relative; */
 }
 
-/* Предотвращаем всплытие событий для вложенных слайдеров */
-.product-card .swiper {
-	touch-action: pan-y;
-}
 .header__bottom-middle {
 	display: flex;
 	align-items: center;
@@ -311,6 +307,9 @@
 	.header__bottom-right{
 		display: none;
 	}
+	.header__bottom{
+		padding-bottom: 0;
+	}
 	.header__bottom-content{
 		gap: 24px;
 	}
@@ -319,6 +318,9 @@
 		width: 26px;
 		height: 20px;
 		background: no-repeat center/contain url('../assets/icons/burger-off.svg');
+	}
+	.header__burger.active{
+		background: no-repeat center/contain url('../assets/icons/burger-on.svg');
 	}
 	.header__logo{
 		width: 133px;

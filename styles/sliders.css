@@ -85,6 +85,9 @@
     height: 368px;
     
 }
+.day-product__title{
+    display: none;
+}
 .day-product__content {
     width: 100%;
     height: 368px;
@@ -132,6 +135,8 @@
     align-items: center;
     margin-top: 17px;
     margin-bottom: 22px;
+    border-radius: 8px;
+    overflow: hidden;
 }
 .day-product__img img{
     max-width: 100%;
@@ -244,5 +249,57 @@
  .main-slider__pagination .swiper-pagination-bullet{
     width: 24px;
  }
-    
+    .day-product{
+        height: auto;
+    }
+    .day-product__title{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 24px;
+    }
+    .day-product__title h2{
+        margin-bottom: 0;
+    }
+   .day-product__title p{
+    font-size: 18px;
+    line-height: 26px;
+    color: rgba(255, 74, 80, 1);
+   }
+   .day-product .swiper-slide{
+    width: 180px;
+   }
+   .day-product__text{
+    display: none;
+   }
+   .day-product__content{
+        padding: 12px;
+        height: auto;
+   }
+   .day-product__discount{
+        width: 49px;
+        height: 49px;
+        top: 8px;
+        right: 8px;
+        background-color: rgba(246, 94, 100, 1);
+        border-color: rgba(221, 221, 221, 1);
+   }
+   .day-product__discount span{
+        font-weight: 500;
+        text-transform: lowercase;
+   }
+   .day-product__img{
+        height: 140px;
+        margin-top: 0;
+        margin-bottom: 8px;
+   }
+   .day-product__price-new{
+        font-size: 18px;
+        line-height: 26px;
+   }
+   .day-product__price-old{
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: -8px;
+   }
 }

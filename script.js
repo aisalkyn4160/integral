@@ -43,6 +43,16 @@ const categoriesSwiper = new Swiper('.categories-swiper', {
         nextEl: '.categories .swiper-button-next',
         prevEl: '.categories .swiper-button-prev',
     },
+
+    breakpoints:{
+        0:{
+            slidesPerView: 'auto',
+            spaceBetween: 12,
+        },
+        1125:{
+            slidesPerView: 5,
+        }
+    }
 })
 
 document.querySelectorAll('.product-card-swiper').forEach(slider => {
@@ -61,11 +71,27 @@ const newSwiper = new Swiper('.new-products-swiper', {
     slidesPerView: 'auto',
     loop: true,
     spaceBetween: 24,
+    breakpoints: {
+        0:{
+            spaceBetween: 12
+        },
+        1125:{
+            spaceBetween: 24
+        }
+    }
 })
 const hitSwiper = new Swiper('.hit-products-swiper', {
     slidesPerView: 'auto',
     loop: true,
     spaceBetween: 24,
+     breakpoints: {
+        0:{
+            spaceBetween: 12
+        },
+        1125:{
+            spaceBetween: 24
+        }
+    }
 })
 const solutionsSwiper = new Swiper('.solutions-swiper', {
     slidesPerView: 1,
@@ -77,6 +103,14 @@ const newsSwiper = new Swiper('.news-swiper', {
     slidesPerView: 'auto',
     loop: true,
     spaceBetween: 16,
+    breakpoints: {
+        0:{
+            spaceBetween: 8
+        },
+        1125:{
+            spaceBetween: 16
+        }
+    }
 })
 
 

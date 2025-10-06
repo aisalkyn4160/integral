@@ -25,3 +25,28 @@
     right: 16px;
     top: 52%;
 }
+
+@media (max-width: 1125px) {
+    .categories-swiper{
+        margin-right: -12px;
+    }
+    .categories-swiper .swiper-slide{
+        width: 180px;
+        height: 160px;
+    }
+    .categories-item {
+        height: 100%;
+        border-radius: 12px;
+    }
+    .categories-item h4{
+        font-size: 16px;
+        line-height: 24px;
+        margin: 12px 12px 8px 12px;
+    }
+    .categories-item__img{
+        margin-left: 46px;
+    }
+    .categories-item__img img{
+        max-width: 128px;
+    }
+}

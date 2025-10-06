@@ -4,3 +4,9 @@
 .about p{
     margin-bottom: 24px;
 }
+
+@media (max-width: 767px){
+    .about{
+        margin-bottom: 24px;
+    }
+}

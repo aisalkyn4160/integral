@@ -17,3 +17,18 @@
     border-radius: 8px;
     padding: 4px 8px 4px 8px;
 }
+
+@media (max-width: 1125px){
+    .hit-products-swiper{
+        margin-right: -12px;
+    }
+    
+}
+@media (max-width: 767px){
+    .hit-products{
+        margin-bottom: 24px;
+    }
+    .hit-products-swiper .swiper-slide{
+        width: 180px;
+    }
+}
