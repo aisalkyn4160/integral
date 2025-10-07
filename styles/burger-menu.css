@@ -1,6 +1,17 @@
 .burger-menu{
-    display: none;
     padding: 24px 12px;
+    position: fixed;
+    top: 104px;
+    left: -150%;
+    width: 100%;
+    height: calc(100vh - 164px);
+    background: rgba(255, 255, 255, 1);
+    z-index: 100;
+    overflow: auto;
+    transition: all 0.3s ease
+}
+.burger-menu.active{
+    left: 0;
 }
 .burger-menu__tabs {
     display: flex;
@@ -26,10 +37,81 @@
     background: rgba(249, 249, 249, 1);
     border-color: rgba(249, 249, 249, 1);
 }
-.burger-menu__content {
-}
+
 .burger-menu__tabs-content {
+    display: none;
 }
-.burger-menu__tabs-content ul > li{
-  
+.burger-menu__tabs-content.active{
+    display: block;
+}
+.burger-menu ul li{
+    padding: 12px 0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: rgba(31, 31, 31, 1);
+    border-bottom: 1px solid rgba(221, 221, 221, 1);
+}
+.burger-menu ul li:last-child{
+    border-bottom: none;
+}
+.burger-menu ul > .has-sublist{
+    position: relative;
+}
+.burger-menu .has-sublist-arrow{
+    position: absolute;
+    top: 12px;
+    right: 0;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.burger-menu__list > .has-sublist > .sublist{
+    position: fixed;
+    top: 104px;
+    left: -150%;
+    width: 100%;
+    height: calc(100vh - 164px);
+    background: rgba(255, 255, 255, 1);
+    border-radius: 12px;
+    /* box-shadow: 0px 4px 24px 0px rgba(106, 122, 152, 0.15); */
+    padding: 24px 24px 24px 24px;
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+.burger-menu__list > .has-sublist > .sublist.active{
+    left: 0;
+}
+.burger-menu__list > .has-sublist > .sublist  .sublist{
+    position: fixed;
+    top: 104px;
+    left: -150%;
+    width: 100%;
+    height: calc(100vh - 164px);
+    background: rgba(255, 255, 255, 1);
+    border-radius: 12px;
+    box-shadow: 0px 4px 24px 0px rgba(106, 122, 152, 0.15);
+    padding: 24px 24px 24px 24px;
+    z-index: 2;
+}
+
+.burger-menu__list > .has-sublist > .sublist  .sublist.active{
+    left: 0;
+}
+.burger-menu .sublist h4{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    margin: 24px 0;
+
+}
+.burger-menu .sublist h4 span{
+    width: 24px;
+    height: 24px;
 }

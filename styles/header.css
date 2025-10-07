@@ -318,12 +318,14 @@
 		width: 26px;
 		height: 20px;
 		background: no-repeat center/contain url('../assets/icons/burger-off.svg');
+		cursor: pointer;
 	}
 	.header__burger.active{
 		background: no-repeat center/contain url('../assets/icons/burger-on.svg');
 	}
 	.header__logo{
 		width: 133px;
+		height: 24px;
 	}
 	.header__bottom-contacts{
 		display: flex;
