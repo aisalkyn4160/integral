@@ -26,6 +26,15 @@
     align-items: center;
     gap: 24px;
 }
+.footer-socials .phone{
+    font-size: 24px;
+    font-weight: 600;
+    margin-right: 22px;
+    white-space: nowrap;
+}
+.footer-socials a{
+    flex-shrink: 0;
+}
 .footer .vk {
     width: 40px;
     height: 40px;
