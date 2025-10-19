@@ -71,6 +71,10 @@ const newSwiper = new Swiper('.new-products-swiper', {
     slidesPerView: 'auto',
     loop: true,
     spaceBetween: 24,
+    navigation: {
+        nextEl: '.new-products-swiper .swiper-button-next',
+        prevEl: '.new-products-swiper .swiper-button-prev',
+    },
     breakpoints: {
         0:{
             spaceBetween: 12
@@ -84,6 +88,10 @@ const hitSwiper = new Swiper('.hit-products-swiper', {
     slidesPerView: 'auto',
     loop: true,
     spaceBetween: 24,
+     navigation: {
+        nextEl: '.hit-products-swiper .swiper-button-next',
+        prevEl: '.hit-products-swiper .swiper-button-prev',
+    },
      breakpoints: {
         0:{
             spaceBetween: 12
@@ -97,6 +105,10 @@ const solutionsSwiper = new Swiper('.solutions-swiper', {
     slidesPerView: 1,
     loop: true,
     spaceBetween: 24,
+     navigation: {
+        nextEl: '.solutions-swiper .swiper-button-next',
+        prevEl: '.solutions-swiper .swiper-button-prev',
+    },
 })
 
 const newsSwiper = new Swiper('.news-swiper', {
